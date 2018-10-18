@@ -1,0 +1,41 @@
+html  {overflow-y: scroll !important}
+.treeview-menu .divider{
+    background: #4b646f;
+    height:1px;
+    margin:5px;
+    width:93%;
+}
+.skin-blue .main-header .navbar  {
+    background-color:  #283337;
+}
+.skin-blue .main-header .logo  {
+    background-color:  #000000;
+}
+.skin-blue .main-header .logo:hover  {
+    background-color:  #000000;
+    color:#ccc;
+}
+.maiusculo {
+    text-transform: uppercase;
+}
+
+#loadingGif{
+    display:none;
+    width:66px;
+    height:auto;
+    margin-top: 40px;
+    margin-left:auto;
+    margin-right: auto;
+    text-align:center;
+}
+
+input[type="text"]:disabled {
+    background: #f9f9f9;
+}
+textarea:disabled{
+    background: #f9f9f9 !important;
+}
+#imagemAssinatura img{
+    height: 90px;
+    width:auto;
+}
