@@ -112,7 +112,7 @@ class Dashboard extends CI_Controller {
 
     public function backup()
     {
-        $prefs = array(
+        /*$prefs = array(
         'format'        => 'txt',                       // gzip, zip, txt
         'add_drop'      => TRUE,                        // Whether to add DROP TABLE statements to backup file
         'add_insert'    => TRUE,                        // Whether to add INSERT data to backup file
@@ -133,6 +133,8 @@ class Dashboard extends CI_Controller {
         $this->load->helper('download');
         force_download('Backup_AACC_'.date('d.m.Y').'.sql', $backup);    
         //redirect('admin/dashboard');
+         * 
+         */
     }
 
     public function config_update()
