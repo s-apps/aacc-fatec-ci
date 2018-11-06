@@ -35,7 +35,7 @@ class Mod_aluno extends CI_Model {
     }
 
     function getNome($ra){
-        $sql = "SELECT nome_aluno FROM aluno WHERE ra = $ra";
+        $sql = "SELECT nome_aluno FROM aluno WHERE ra = '$ra'";
         $row = $this->db->query($sql)->row();
         return $row->nome_aluno;
     }
