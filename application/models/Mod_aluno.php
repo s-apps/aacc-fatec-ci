@@ -30,7 +30,7 @@ class Mod_aluno extends CI_Model {
     }
     
     function getByRA($ra){
-        $sql = "SELECT A.ra,A.nome_aluno,A.email,A.id_curso,C.nome_curso FROM aluno as A INNER JOIN curso as C ON A.id_curso = C.id_curso WHERE ra = $ra";
+        $sql = "SELECT A.ra,A.nome_aluno,A.email,A.id_curso,C.nome_curso FROM aluno as A INNER JOIN curso as C ON A.id_curso = C.id_curso WHERE ra = '$ra'";
         return $this->db->query($sql)->row();
     }
 
