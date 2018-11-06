@@ -15,7 +15,6 @@
         <div class="container center">
       <!-- Default box -->
       <div class="box box-primary">
-          <p>Demonstração desabilitada até 31.10.2018</p>
           <?php $atributos = array('id' => 'frmLogin', 'name' => 'frmLogin'); echo form_open('login/entrar', $atributos);?>
         <div class="box-header with-border">
             <h3 class="box-title">Login</h3>
