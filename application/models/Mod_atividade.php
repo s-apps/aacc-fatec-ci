@@ -84,7 +84,7 @@ class Mod_atividade extends CI_Model {
     }
 
     function getByID($id_atividade){
-        $sql = "SELECT * FROM atividade WHERE id_atividade = $id_atividade";
+        $sql = "SELECT * FROM atividade WHERE id_atividade = '$id_atividade'";
         return $this->db->query($sql)->row();
     }
 
@@ -151,22 +151,22 @@ class Mod_atividade extends CI_Model {
     }
 
     function getAllByRA($ra_aluno){
-        $sql = "SELECT id_atividade,data_atividade,descricao_atividade,carga_horaria FROM atividade WHERE ra_aluno = $ra_aluno";
+        $sql = "SELECT id_atividade,data_atividade,descricao_atividade,carga_horaria FROM atividade WHERE ra_aluno = '$ra_aluno'";
         return $this->db->query($sql)->result();
     }
 
     function getAllByModalidadeRA($id_modalidade,$ra_aluno){
-        $sql = "SELECT id_atividade,data_atividade,descricao_atividade,carga_horaria FROM atividade WHERE ra_aluno = $ra_aluno AND id_modalidade = $id_modalidade";
+        $sql = "SELECT id_atividade,data_atividade,descricao_atividade,carga_horaria FROM atividade WHERE ra_aluno = '$ra_aluno' AND id_modalidade = '$id_modalidade'";
         return $this->db->query($sql)->result();
     }
     
     function delete($id_atividade){
-        $sql = "DELETE FROM atividade WHERE id_atividade = $id_atividade";
+        $sql = "DELETE FROM atividade WHERE id_atividade = '$id_atividade'";
         return $this->db->query($sql);
     }
     
     function delete_atividade_tem_certificado($id_atividade){
-        $sql = "DELETE FROM atividade_tem_certificado WHERE id_atividade = $id_atividade";
+        $sql = "DELETE FROM atividade_tem_certificado WHERE id_atividade = '$id_atividade'";
         return $this->db->query($sql);
     }
     
